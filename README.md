@@ -25,3 +25,9 @@ This was just a side project I did for fun over a couple of evenings, I'm sure t
 - Mazes don't need to be square - as long as they are surrounded by black walls. The input image will obviously be square.
 - Large areas of white, using my algorithm, will essentially degenerate into an inefficient flood fill - avoid!
 
+## Setup
+Needs the Pillow dependency to read images. pypi.org/project/Pillow/2.2.1/  
+Or; ```pip install Pillow```  
+To run from the command line; ```py solve.py ./examples/combo400.png ./ans.png -m depthfirst```  
+This will run a depth first on the combo400.png file. The -m argument is optional. Default is breadth first. Possible choices are; leftturn, breadthfirst, depthfirst, dijkstra, and astar.
+
