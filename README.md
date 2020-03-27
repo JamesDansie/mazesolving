@@ -31,3 +31,5 @@ Or; ```pip install Pillow```
 To run from the command line; ```py solve.py ./examples/combo400.png ./ans.png -m depthfirst```  
 This will run a depth first on the combo400.png file. The -m argument is optional. Default is breadth first. Possible choices are; leftturn, breadthfirst, depthfirst, dijkstra, and astar.
 
+## General Layout
+Solve is the main class. Solve takes in the input/output files as strings. Solve then reads the input file as a Pillow image, and passes that to the maze. Maze contains the maze node, and accepts an image input. It parses the image to make the graph/maze. Factory solver then makes the solver, and the solver receives the maze. The solver returns the result as a queue of maze nodes from the end of the maze to the entrance of the maze.
